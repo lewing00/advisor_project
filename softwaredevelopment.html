@@ -3,85 +3,81 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Software Development</title>
-	<link rel = "stylesheet" type = "text/css" href = "styles/advisordefault.css" />
+	<link rel = "stylesheet" type = "text/css" href = "./advisordefault.css" />
 	
 	<script>
-	function allowDrop(ev) {
-	ev.preventDefault();
-	}
-	
-	function drag(ev) {
-	ev.dataTransfer.setData("text", ev.target.id);
-	}
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
 
-	function drop(ev) {
-	ev.preventDefault();
-	var data = ev.dataTransfer.getData("text");
-	ev.target.appendChild(document.getElementById(data));
-	}
-</script>
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
 </head>
-
-
 <body>
-<header>
-<h3>Associate in Applied Science</h3>
-<h1>Information Technology (A25590S)</h1>
-<h3>Concentration in Software Development</h3>
-</header>
-<main>
-<p>Future information area with lots of information that most students will never read. Then, even though we took
+	<header>
+		<h3>Associate in Applied Science</h3>
+		<h1>Information Technology (A25590S)</h1>
+		<h3>Concentration in Software Development</h3>
+	</header>
+	<main>
+		<p>Future information area with lots of information that most students will never read. Then, even though we took
 time to give them all the information they are going to email and bug their advisor or teacher anyway. I'm trying to 
 make sure this in an actual paragraph so that one of those said teachers doesn't clock me for it. At least we listen
 some of the time right?</p>
 
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<button id="CTI110" draggable="true" ondragstart="drag(event)">CTI110 Web, Programming, & DB Found.</button>
+			<button id="CTI120" draggable="true" ondragstart="drag(event)">CTI120 Network & Security Found.</button>
+			<button id="CTI130" draggable="true" ondragstart="drag(event)">CTI130 O.S & Device Found.</button>
+			<button id="CTS115" draggable="true" ondragstart="drag(event)">CTS115 Info Sys Business Concepts</button>
+			<button id="ENG111" draggable="true" ondragstart="drag(event)">CTS115 Writing and Inquiry</button>
+		</div>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-<button id="CTI110" draggable="true" ondragstart="drag(event)">CTI110 Web, Programming, & DB Found.</button>
-<button id="CTI120" draggable="true" ondragstart="drag(event)">CTI120 Network & Security Found.</button>
-<button id="CTI130" draggable="true" ondragstart="drag(event)">CTI130 O.S & Device Found.</button>
-<button id="CTS115" draggable="true" ondragstart="drag(event)">CTS115 Info Sys Business Concepts</button>
-<button id="ENG111" draggable="true" ondragstart="drag(event)">CTS115 Writing and Inquiry</button>
-</div>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<button id="CSC143" draggable="true" ondragstart="drag(event)">CSC143 Object-Oriented Programming</button>
+			<button id="CSC154" draggable="true" ondragstart="drag(event)">CSC154 Software Development</button>
+			<button id="MAT143" draggable="true" ondragstart="drag(event)">MAT143 Quantitative Literacy</button>
+			<button id="WEB110" draggable="true" ondragstart="drag(event)">WEB110 Internet/Web Fundamentals</button>
+		</div>
 
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-<button id="CSC143" draggable="true" ondragstart="drag(event)">CSC143 Object-Oriented Programming</button>
-<button id="CSC154" draggable="true" ondragstart="drag(event)">CSC154 Software Development</button>
-<button id="MAT143" draggable="true" ondragstart="drag(event)">MAT143 Quantitative Literacy</button>
-<button id="WEB110" draggable="true" ondragstart="drag(event)">WEB110 Internet/Web Fundamentals</button>
-</div>
+		<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<button id="CIS110" draggable="true" ondragstart="drag(event)">CIS110 Introduction to Computers</button>
+			<button id="COM231" draggable="true" ondragstart="drag(event)">COM231 Public Speaking</button>
+		</div>
 
-<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-<button id="CIS110" draggable="true" ondragstart="drag(event)">CIS110 Introduction to Computers</button>
-<button id="COM231" draggable="true" ondragstart="drag(event)">COM231 Public Speaking</button>
-</div>
+		<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<button id="CSC151" draggable="true" ondragstart="drag(event)">CSC151 Java Programming</button>
+			<button id="CSC174" draggable="true" ondragstart="drag(event)">CSC174 JavaScript</button>
+			<button id="CTS240" draggable="true" ondragstart="drag(event)">CTS240 Project Management</button>
+			<button id="DBA120" draggable="true" ondragstart="drag(event)">DBA120 Database Programming I</button>
+			<button id="ENG114/112" draggable="true" ondragstart="drag(event)">ENG114 Prof. Research & Reporting OR ENG 112 Writing/Reseach in the Disc.</button>
+		</div>
 
-<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
-<button id="CSC151" draggable="true" ondragstart="drag(event)">CSC151 Java Programming</button>
-<button id="CSC174" draggable="true" ondragstart="drag(event)">CSC174 JavaScript</button>
-<button id="CTS240" draggable="true" ondragstart="drag(event)">CTS240 Project Management</button>
-<button id="DBA120" draggable="true" ondragstart="drag(event)">DBA120 Database Programming I</button>
-<button id="ENG114/112" draggable="true" ondragstart="drag(event)">ENG114 Prof. Research & Reporting OR ENG 112 Writing/Reseach in the Disc.</button>
-</div>
+		<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<button id="CSC249" draggable="true" ondragstart="drag(event)">CSC249 Data Structures & Algorithms</button>
+			<button id="CSC251" draggable="true" ondragstart="drag(event)">CSC251 Advanced Java Programming</button>
+			<button id="CSC256/284" draggable="true" ondragstart="drag(event)">CSC256 Software Quality Assurance OR CSC 284 Emerging Comp Prog Tech</button>
+			<button id="CTI289" draggable="true" ondragstart="drag(event)">CTI289 Capstone Project</button>
+		</div>
 
-<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
-<button id="CSC249" draggable="true" ondragstart="drag(event)">CSC249 Data Structures & Algorithms</button>
-<button id="CSC251" draggable="true" ondragstart="drag(event)">CSC251 Advanced Java Programming</button>
-<button id="CSC256/284" draggable="true" ondragstart="drag(event)">CSC256 Software Quality Assurance OR CSC 284 Emerging Comp Prog Tech</button>
-<button id="CTI289" draggable="true" ondragstart="drag(event)">CTI289 Capstone Project</button>
-</div>
+		<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<button id="Elective" draggable="true" ondragstart="drag(event)">Humanities/Fine Arts Elective</button>
+			<button id="Science" draggable="true" ondragstart="drag(event)">Social/Behavioral Science</button>
+		</div>
 
-<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
-<button id="Elective" draggable="true" ondragstart="drag(event)">Humanities/Fine Arts Elective</button>
-<button id="Science" draggable="true" ondragstart="drag(event)">Social/Behavioral Science</button>
-</div>
-
-</main>
-
-<footer>
-<br>
-<a href="http://validator.w3.org/check?uri=referer" style = "text-decoration: none"><img src="images/html2.png" alt="Validate HTML" /></a>
-<a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none"><img src="images/css2.png" alt="Validate CSS" /></a>
-</footer>
+	</main>
+	<footer>
+		<br>
+		<a href="http://validator.w3.org/check?uri=referer" style = "text-decoration: none"><img src="images/html2.png" alt="Validate HTML" /></a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none"><img src="images/css2.png" alt="Validate CSS" /></a>
+	</footer>
 </body>
 </html>
